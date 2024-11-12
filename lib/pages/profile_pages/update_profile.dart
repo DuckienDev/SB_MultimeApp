@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:strong_body_app/widgets/profile_widgets/button_update_profile.dart';
 import 'package:strong_body_app/widgets/profile_widgets/experience_card.dart';
 import 'package:strong_body_app/widgets/profile_widgets/language_tile.dart';
@@ -46,7 +49,76 @@ class _UpdateProfileState extends State<UpdateProfile> {
           padding: const EdgeInsets.all(10.0),
           child: Column(
             children: [
-              const SizedBox(height: 200),
+              const SizedBox(height: 50),
+              //canva backgrown
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  Stack(
+                    children: [
+                      ColorFiltered(
+                        colorFilter: ColorFilter.mode(
+                          Colors.black.withOpacity(0.3),
+                          BlendMode.darken,
+                        ),
+                        child: Image.asset(
+                          'assets/profile/BG.png',
+                          width: double.infinity,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Text(
+                    'Upload 430x190 px images for more impressions \nand sales opportunities.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(height: 10),
+              //Avatar
+              SizedBox(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Stack(
+                    alignment: Alignment.bottomRight,
+                    children: [
+                      CircleAvatar(
+                        radius: 40.sp,
+                        backgroundImage: const AssetImage(
+                          'assets/profile/Group 722.png',
+                        ),
+                      ),
+                      Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Container(
+                            width: 30,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.red,
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                width: 2,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const Icon(
+                            Icons.camera_alt_outlined,
+                            color: Colors.white,
+                            size: 20,
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
               //Person information
               Card(
                 color: Colors.white,
