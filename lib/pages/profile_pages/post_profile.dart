@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:strong_body_app/widgets/button_sb.dart';
+import 'package:strong_body_app/widgets/button_mtm.dart';
 
 class PostProfile extends StatelessWidget {
   const PostProfile({

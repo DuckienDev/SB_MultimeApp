@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:strong_body_app/pages/dating_pages/img_picker_dialog.dart';
-import 'package:strong_body_app/widgets/button_sb.dart';
+import 'package:strong_body_app/widgets/button_mtm.dart';
 
 class InforDatingPage extends StatelessWidget {
   const InforDatingPage({super.key});

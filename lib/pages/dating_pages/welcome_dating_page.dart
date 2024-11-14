@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:strong_body_app/pages/dating_pages/infor_dating_page.dart';
-import 'package:strong_body_app/widgets/button_sb.dart';
+import 'package:strong_body_app/widgets/button_mtm.dart';
 import 'package:strong_body_app/widgets/dating_widgets/rule_item.dart';
 
 class DatingModePage extends StatelessWidget {

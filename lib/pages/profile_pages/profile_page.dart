@@ -5,7 +5,7 @@ import 'package:strong_body_app/pages/profile_pages/post_profile.dart';
 import 'package:strong_body_app/pages/profile_pages/review_profile.dart';
 import 'package:strong_body_app/pages/profile_pages/serviecs_profile.dart';
 import 'package:strong_body_app/pages/profile_pages/shop_profile.dart';
-import 'package:strong_body_app/widgets/button_sb.dart';
+import 'package:strong_body_app/widgets/button_mtm.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

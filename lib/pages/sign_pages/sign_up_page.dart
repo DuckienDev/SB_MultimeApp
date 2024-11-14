@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:strong_body_app/pages/sign_pages/sign_in_page.dart';
-import 'package:strong_body_app/widgets/button_sb.dart';
+import 'package:strong_body_app/widgets/button_mtm.dart';
 import 'package:strong_body_app/widgets/sign_widgets/suggest_text.dart';
 import 'package:strong_body_app/widgets/sign_widgets/text_field_sign.dart';
 

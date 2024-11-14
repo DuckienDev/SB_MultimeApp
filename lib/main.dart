@@ -9,6 +9,8 @@ import 'package:strong_body_app/pages/sign_pages/import_contacts_page.dart';
 import 'package:strong_body_app/pages/sign_pages/sign_in_page.dart';
 import 'package:strong_body_app/pages/sign_pages/success_email.dart';
 import 'package:strong_body_app/pages/sign_pages/success_phone.dart';
+import 'package:strong_body_app/widgets/form_card_widget.dart';
+import 'package:strong_body_app/widgets/icon_button_widget.dart';
 
 void main() => runApp(const MyApp());
 
@@ -22,9 +24,17 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, child) {
-        return const MaterialApp(
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: HomeDatingPage(),
+          home: Scaffold(
+              body: Center(
+            child: FormCardMTM(
+              width: 250,
+              height: 300,
+              image:
+                  'https://ipleader.vn/wp-content/uploads/2019/03/nike-logo.jpg',
+            ),
+          )),
         );
       },
     );
